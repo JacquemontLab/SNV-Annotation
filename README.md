@@ -241,7 +241,8 @@ We do not use the pVCF files as they contain excessive information that is unnec
 ### 1. Filtering gVCF and taking intersection between callers if multiple are available (e.g., in the case of SPARK)
 
 ⚠️**This step may need to be adapted depending on the dataset you are working with**⚠️.
-For SPARK, it processes two gVCF files per sample and retains only their intersection. In contrast, for UKBB, it processes a single gVCF file per sample.
+For UKBB, it processes a single gVCF file per sample, by default in the pipeline. 
+In contrast, for SPARK, it processes two gVCF files per sample and retains only their intersection.
 
 
 The gVCF files are filtered to retain only:
